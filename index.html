@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>javascript Html</title>
+  <style>
+  
+  #form{
+    width: 400px;
+    margin: 20vh auto 0 auto;
+    padding: 20px;
+    background-color: whitesmoke;
+    border-radius: 10px;
+    font-size: 12px;
+    margin-top: 30px;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+  }
+
+   h1{
+    font-family: "facebook letter faces";
+      font-size: 50px;
+      color: #1877f2;
+      text-align: center;
+  }
+
+  p{
+    text-align: center;
+    font-family: 'Arial';
+    font-size: 20px;
+  }
+
+  .login{
+    background-color: #1877f2;
+      padding: 15px;
+      text-align: center;
+      border-color:#1877f2;
+      width: 100%;
+      border-radius: 5px;
+      color: white;
+      font-size: 20px;
+      font-family: 'Arial';
+      font-weight: 700;
+      transition: 0.5s;
+  }
+  .login:hover{
+    background-color: #4257b2;
+  }
+
+  .forget{
+      margin: 15px 0;
+      text-decoration: none;
+      color: #1877f2;
+      font-family: 'Arial';
+      font-size: 14px;
+    }
+
+  .signupboundary{
+      padding: 20px;
+      border-top: 1px solid #999;
+      display: flex;
+      justify-content: center;
+    }
+
+    .signup{
+      background-color: #42b72a;
+      border-color:#42b72a;
+      padding: 15px;
+      border-radius: 5px;
+      color: white;
+      font-size: 17px;
+      font-family: 'Arial';
+      font-weight: 600;
+      transition: 0.5s;
+    }
+    .signup:hover{
+      background-color: green;
+    }
+
+  
+
+  .input-control{
+    display: flex;
+    flex-direction: column;
+  }
+
+  .input-control input{
+    border: 2px solid white;
+    border-radius: 5px;
+    display: block;
+    padding: 15px;
+    font-size: 12px;
+    border: 1px solid #999;
+    font-size: 16px;
+  }
+  .input-control input:focus{
+    outline: 0;
+  }
+  .input-control.sucess input{
+    border-color: #09c372;
+  }
+  .input-control.error input{
+    border-color: #ff3860;
+  }
+  .input-control .error{
+    color: red;
+    font-size: 9px;
+    font-family: 'arial';
+    height: 13px;
+  }
+     
+  </style>
+</head>
+<body>
+
+  <div class="container">
+    <div>
+    <h1>facebook</h1>
+  </div>
+    <form id="form" action="codepage.html" method="GET">
+        
+        <div class="input-control">
+          <p>Log in to facebook</p>
+        </div>
+        <div class="input-control">
+            <input id="email" placeholder="mobile number or email address" name="email" type="text">
+            <div class="error"></div>
+        </div>
+        <div class="input-control">
+            <input id="password" placeholder="password" name="password" type="password">
+            <div class="error"></div>
+        </div>
+        <div class="input-control">
+            </div>
+            <button id="login" name="login" class="login" type="submit">Login</button>
+
+            <a class="forget" href="">forgotten password</a>
+
+            <div class="signupboundary">
+              <button onclick="disable(this)" id="signup" type="create" class=" signup">Create Account</button>
+            </div>
+        </form>
+        <p></p>
+    </div>
+
+<script src="index.js"></script>
+</body>
+</html>
